@@ -20,7 +20,7 @@ int main(){
 
         int numero_aleatorio = rand() % 10;
 
-        printf("O numero gerado aleatoriamente de 0 a 10 foi: %d\n\n", nale);
+        printf("O numero gerado aleatoriamente de 0 a 10 foi: %d\n\n", numero_aleatorio);
 
         if(num == numero_aleatorio)
             printf("Parabens voce acertou!\n");
