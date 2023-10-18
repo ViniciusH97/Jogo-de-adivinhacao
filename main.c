@@ -4,8 +4,8 @@
 
 int main(){
 
-    int n;
-    char res;
+    int num;
+    char resposta;
 
     printf("\n\n---------------BEM - VINDO AO JOGO DE ADIVINHACAO ----------------\n\n\n");
     printf("Pressione a tecla 'Enter' para continuar\n");
@@ -14,23 +14,23 @@ int main(){
         system("cls\n");
 
         printf("\nEscolha um numero de 0 a 10 para a adivinhacao\n\n");
-        scanf("%d", &n);
+        scanf("%d", &num);
 
         srand(time(NULL));
 
-        int nale = rand() % 10;
+        int numero_aleatorio = rand() % 10;
 
         printf("O numero gerado aleatoriamente de 0 a 10 foi: %d\n\n", nale);
 
-        if(n == nale)
+        if(num == numero_aleatorio)
             printf("Parabens voce acertou!\n");
         else    
             printf("Voce errou!\n\n");
 
         printf("Deseja tentar novamente? s/n \n\n");
-        scanf(" %c", &res);
+        scanf(" %c", &resposta);
 
-    }while(res == 's' || res == 'S');
+    }while(resposta == 's' || resposta == 'S');
 
     return 0;
 
