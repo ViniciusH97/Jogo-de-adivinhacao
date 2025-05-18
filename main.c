@@ -18,7 +18,7 @@ int main(){
 
         srand(time(NULL));
 
-        int numero_aleatorio = rand() % 10;
+        int numero_aleatorio = rand() % 11;
 
         printf("O numero gerado aleatoriamente de 0 a 10 foi: %d\n\n", numero_aleatorio);
 
